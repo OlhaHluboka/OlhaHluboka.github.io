@@ -23,8 +23,8 @@ h3 {
   margin-bottom: 5px;
   margin-left: 5px;
   color: #090250;
-
-}
+  max-width: 100%;
+ }
 
 p {
   font-family: 'Vollkorn', serif;
@@ -43,16 +43,27 @@ td {
   text-align: left;
   height: 80px;
   vertical-align: top;
+  max-width: 100%;
+  min-width: 1%;
+  font-stretch: 10%;
+  
+  }
 
-}
+  @media screen and (max-width:500px) {
+    td {font-size: 10px;}
+    h3 {font-size: 15px;}
+    a {font-size: 10px;}
+    p {font-size: 15px;}
+ }
 
 table {
 
   width: 100%;
   border: 1px solid;
   border-color: rgba(96, 158, 246, 0.8);
-
-
+  max-width: 100%;
+  min-width: none;
+  
 }
 
 
